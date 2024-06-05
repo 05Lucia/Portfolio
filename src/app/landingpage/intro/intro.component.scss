@@ -1,0 +1,73 @@
+@import './../../../styles.scss';
+
+.intro-container {
+    @include dFlex ($jc: center, $ai: center, $g: 4rem);
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    padding: 2rem;
+    background-color: $bg1;
+    color: white;
+    flex-direction: column;
+}
+
+.info-box {
+    height: 520px;
+    width: 310px;
+    border: 3px solid white;
+    border-radius: 35% 0%;
+    box-shadow: $main-color1 -4px -4px 2px;
+    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+    flex-direction: column;
+    >img {
+        height: 5rem;
+        width: 5rem;
+        border: 3px solid $main-color1;
+        border-radius: 100%;
+    }
+    >div {
+        background-color: transparent;
+    }
+}
+
+.name {
+    @include dFlex ($jc: center, $ai: center, $g: 0);
+    flex-direction: column;
+}
+
+.languages {
+    @include dFlex ($jc: flex-start, $ai: center, $g: 10px);
+    >p {
+        font-size: 14px;
+        padding: 2px 8px;
+        color: $bg1;
+        background-color: $main-color1;
+        border-radius: 9px;
+    }
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: left;
+    @include dFlex ($jc: flex-start, $ai: center, $g: 9px);
+    flex-wrap: wrap;
+    >div{
+        color: $main-color1;
+    }
+}
+
+h2 {
+    text-align: left;
+    @include dFlex ($jc: flex-start, $ai: center, $g: 9px);
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.interduction {
+    padding: 0rem 1rem;
+    width: 100%;
+    @include dFlex ($jc: center, $ai: flex-start, $g: 10px);
+    flex-direction: column;
+}
