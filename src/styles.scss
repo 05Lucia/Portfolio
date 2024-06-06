@@ -1,14 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 $bg1: #343c45;
+$bg1-light: #4f5b69;
 $bg2: #191d21;
 $main-color1: #27f8c4;
-$main-color2: #98fad8;
+$main-color2: #c3f8e6;
 $gray: #45474c;
 
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -19,20 +20,25 @@ $gray: #45474c;
 *::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 5px;
-    
+
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: $main-color2;
     border-radius: 5px;
-    
+
 }
 
 @font-face {
     font-family: 'Raleway';
     src: url('./assets/fonts/Raleway-VariableFont_wght.ttf') format('truetype'),
-         url('./assets/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-  }
+        url('./assets/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CutiveMono';
+    src: url('./assets/fonts/CutiveMono-Regular.ttf') format('truetype');
+}
 
 body {
     background-color: $bg1;
@@ -47,6 +53,7 @@ body {
 }
 
 button {
+    @include dFlex ($jc: center, $ai: center, $g: 16px);
     font-size: 24px;
     color: white;
     background-color: transparent;
@@ -54,10 +61,10 @@ button {
     padding: 5px 15px;
     border-radius: 20px;
     cursor: pointer;
+    text-align: center;
+
     &:hover {
-        background-color: $main-color2;
-        color: $bg1;
-        border: none;
+        background-color: $bg1-light;
         transform: scale(1.2);
     }
 }

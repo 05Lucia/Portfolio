@@ -1,0 +1,51 @@
+@import './../../../styles.scss';
+
+section {
+    height: 100%;
+    background-image: url(./../../../assets/img/background-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg1;
+    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+    flex-direction: column;
+
+    text-align: center;
+
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: rgba(52, 60, 69, 0.9);
+    @include dFlex ($jc: flex-start, $ai: center, $g: 2rem);
+    flex-direction: column;
+    top: 0;
+    left: 0;
+
+    
+}
+
+.skill-list {
+    @include dFlex ($jc: center, $ai: center, $g: 1.5rem);
+    flex-wrap: wrap;
+    >div {
+        @include dFlex ($jc: center, $ai: center, $g: 0.5rem);
+        flex-direction: column;
+    }
+}
+
+h1 {
+    font-weight: 500;
+    // background-color: $bg1;
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    // border: 4px solid $main-color1;
+    // border-radius: 3rem 0%;
+    color: $main-color1;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-thickness: 3px;
+}
