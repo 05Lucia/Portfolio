@@ -1,3 +1,18 @@
+@import './../../styles.scss';
+
 nav {
-    position: absolute;
+    width: 100%;
+    position: fixed;
+    height: 3rem;
+    @include dFlex ($jc: space-between, $ai: center, $g: 2rem);
+    padding: 1rem;
+    background-color: $bg1;
+    border-bottom: 2px solid $bg1-light;
+    z-index: 3;
+
+    >p {
+        font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+        color: $main-color1;
+        font-size: 1.25rem;
+    }
 }
