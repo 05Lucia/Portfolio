@@ -15,6 +15,7 @@ export class ProjectdataService {
       frame: "./assets/img/projectframe.png",
       info: "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
       link:"http://pokedex.alice-buchholz.de/",
+      github: "https://github.com/05Lucia/Pokedex",
     },
     {
       name: "El Pollo Loco",
@@ -23,6 +24,7 @@ export class ProjectdataService {
       frame: "./assets/img/projectframe.png",
       info: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       link:"http://el-pollo-loco.alice-buchholz.de/",
+      github: "https://github.com/05Lucia/El-pollo-Loco",
     },
     {
       name: "Join",
@@ -31,6 +33,7 @@ export class ProjectdataService {
       frame: "./assets/img/projectframe.png",
       info: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       link:"http://join.alice-buchholz.de/",
+      github: "https://github.com/05Lucia/Join",
     }
   ]
 
