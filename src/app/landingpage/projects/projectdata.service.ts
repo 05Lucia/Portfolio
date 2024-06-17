@@ -10,21 +10,27 @@ export class ProjectdataService {
   projectlist = [
     {
       name: "Pokedex",
-      img: "./assets/img/pojeckt pokedex.png",
+      img: "./assets/img/pokedex screanshot 2.png",
       skils: "JavaScript | HTML | CSS | Api",
+      frame: "./assets/img/projectframe.png",
       info: "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+      link:"http://pokedex.alice-buchholz.de/",
     },
     {
       name: "El Pollo Loco",
-      img: "./assets/img/el polo loco.png",
+      img: "./assets/img/el polo loco sreanschot 1 (1).png",
       skils: "JavaScript | HTML | CSS",
+      frame: "./assets/img/projectframe.png",
       info: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      link:"http://el-pollo-loco.alice-buchholz.de/",
     },
     {
       name: "Join",
-      img: "./assets/img/join.png",
+      img: "./assets/img/join screen (1).png",
       skils: "JavaScript | HTML | CSS",
-      info: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+      frame: "./assets/img/projectframe.png",
+      info: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      link:"http://join.alice-buchholz.de/",
     }
   ]
 

@@ -10,6 +10,7 @@ $gray: #45474c;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -27,6 +28,11 @@ $gray: #45474c;
     background-color: $main-color2;
     border-radius: 5px;
 
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 @font-face {
