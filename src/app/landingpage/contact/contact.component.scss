@@ -1,0 +1,119 @@
+@import './../../../styles.scss';
+
+.contact-component {
+    width: 100vw;
+    max-width: 100%;
+    @include dFlex ($jc: center, $ai: center, $g: 3rem);
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.form-container {
+    width: 19rem;
+    @include dFlex ($jc: center, $ai: center, $g: 0rem);
+}
+
+.contact-contaniner {
+    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+    flex-direction: column;
+}
+
+.contact-info {
+    text-align: center;
+    @include dFlex ($jc: center, $ai: center, $g: 0rem);
+    >h2 {
+        font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+        font-size: 1.25rem;
+
+        >span {
+            font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+            color: $main-color1;
+        }
+    }
+}
+
+form {
+    width: 100%;
+    @include dFlex ($jc: center, $ai: center, $g: 0.25rem);
+    flex-direction: column;
+    padding: 10px;
+
+    >input {
+        height: 2rem;
+        width: 100%;
+        background-color: $bg2;
+        border: 1px solid $main-color2;
+        border-radius: 0.5rem;
+        padding-left: 0.5rem;
+        color: white;
+
+        &::placeholder {
+            color: rgb(195, 207, 201);
+        }
+
+        &:hover {
+            border: 2px solid $main-color2;
+        }
+    }
+
+    >textarea{
+        width: 100%;
+        background-color: $bg2;
+        border: 1px solid $main-color2;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        color: white;
+
+        &::placeholder {
+            color: rgb(195, 207, 201);
+        }
+
+        &:hover {
+            border: 2px solid $main-color2;
+        }
+    }
+
+    >label {
+        width: 100%;
+        text-align: left;
+        padding-top: 1rem;
+        color: $main-color1;
+        
+    }
+}
+
+.submit {
+    width: 17rem !important;
+    @include dFlex ($jc: center, $ai: center, $g: 16px);
+    font-size: 24px;
+    color: $bg2 !important;
+    background-color: $main-color1 !important;
+    border: 2px solid $main-color1 !important;
+    padding: 5px 15px;
+    border-radius: 20px !important;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    height: auto !important;
+
+    &:hover {
+        background-color: $main-color2 !important;
+        transform: scale(1.1);
+        border-color: $main-color2 !important;
+    }
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 4rem;
+    color: $main-color1;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-thickness: 3px;
+}
+
+.warning {
+    color: rgb(255, 74, 61);
+    font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+}

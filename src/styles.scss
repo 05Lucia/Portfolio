@@ -30,6 +30,14 @@ $gray: #45474c;
 
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px $bg2 inset !important;
+    -webkit-text-fill-color: #ffffff;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -74,3 +82,4 @@ button {
         transform: scale(1.2);
     }
 }
+

@@ -1,1 +1,34 @@
-<p>contact works!</p>
+<div class="contact-component">
+    <h1>Kontakt</h1>
+    <div class="contact-contaniner">
+        <div class="contact-info">
+            <h2>Brauchen Sie eine <span>Frontend-Entwicklerin?</span><br>
+                <br>
+                Kontaktieren Sie mich!
+            </h2>
+        </div>
+        <div class="form-container">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <label for="name">Name</label>
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" placeholder="Ihr Name.." required minlength="2">
+                @if (!name.valid && name.touched) {
+                    <span class="warning">Ihr Name ist erforderlich (Mindestlänge: 2)</span> 
+                }
+
+                <label for="email">E-mail</label>
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Ihre E-mail.." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                @if (!email.valid && email.touched) {
+                    <span class="warning">Ihre E-mail ist erforderlich</span> 
+                }
+
+                <label for="subject">Nachricht</label><!--Subject-->
+                <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" id="subject" name="subject" placeholder="Ihre Nachricht.." style="height:200px" required></textarea>
+                @if (!message.valid && message.touched) {
+                    <span class="warning">Ihre Nachricht ist erforderlich (Mindestlänge: 5)</span> 
+                }
+
+                <input type="submit" value="Nachricht Senden" class="submit">
+            </form>
+        </div>
+    </div>
+</div>

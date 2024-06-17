@@ -10,12 +10,12 @@
 }
 
 .project-container {
-    @include dFlex ($jc: center, $ai: center, $g: 5rem);
+    @include dFlex ($jc: center, $ai: center, $g: 6rem);
     flex-direction: column;
 }
 
 .project-component {
-    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+    @include dFlex ($jc: center, $ai: center, $g: 4rem);
     flex-direction: column;
 }
 
