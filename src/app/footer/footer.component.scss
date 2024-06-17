@@ -1,5 +1,15 @@
 @import './../../styles.scss';
 
+section {
+    width: 100%;
+    @include dFlex ($jc: space-between, $ai: center, $g: 1rem);
+    padding: 1rem;
+}
+
+div {
+    @include dFlex ($jc: center, $ai: center, $g: 5px);
+}
+
 a {
     color: $main-color2 !important;
     text-decoration: none;
