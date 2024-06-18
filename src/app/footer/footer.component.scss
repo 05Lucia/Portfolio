@@ -11,6 +11,15 @@ div {
 }
 
 a {
+    cursor: pointer;
     color: $main-color2 !important;
     text-decoration: none;
+}
+
+.links {
+    >a{
+        >img{
+            height: 30px;
+        }
+    }
 }

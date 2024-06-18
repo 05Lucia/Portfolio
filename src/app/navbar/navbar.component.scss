@@ -10,9 +10,96 @@ nav {
     border-bottom: 2px solid $bg1-light;
     z-index: 3;
 
-    >p {
-        font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+
+    >a {
+        font-family: 'CutiveMono', Arial, Helvetica, sans-serif;
         color: $main-color1;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 17px;
+            text-decoration-thickness: 1px;
+        }
+    }
+
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.mobile-menu.active {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: $bg1;
+    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+    flex-direction: column;
+
+    >a {
+        font-size: 3rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $main-color1;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.close {
+    color: $main-color1;
+    font-size: 2rem;
+}
+
+.closemenu {
+    padding-right: 0.5rem;
+}
+
+.desktop750 {
+    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+}
+
+.menu-links-desktop {
+    @include dFlex ($jc: center, $ai: center, $g: 1.5rem);
+
+    >a {
+        font-family: 'CutiveMono', Arial, Helvetica, sans-serif;
+        font-size: 1.20rem;
+
+        &:hover {
+
+            color: $main-color1;
+            text-decoration: underline;
+            text-underline-offset: 17px;
+            text-decoration-thickness: 1px;
+        }
+    }
+
+}
+
+.language {
+    @include dFlex ($jc: center, $ai: center, $g: 0.5rem);
+    font-size: 1rem;
+
+    >a {
+        &:hover {
+
+            color: $main-color1;
+            text-decoration: underline;
+            text-underline-offset: 17px;
+            text-decoration-thickness: 1px;
+        }
+    }
+
+    >.seperator {
+        height: 1rem;
+        width: 2px;
+        background-color: $bg1-light;
     }
 }

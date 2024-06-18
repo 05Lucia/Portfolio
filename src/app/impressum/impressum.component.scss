@@ -1,0 +1,20 @@
+@import './../../styles.scss';
+
+.impressum {
+    padding: 2rem;
+    padding-top: 5rem;
+    height: 93.5vh;
+    @include dFlex ($jc: space-between, $ai: flex-start, $g: 1rem);
+    flex-direction: column;
+}
+
+a {
+    color: $main-color1;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    color: $main-color1;
+    font-weight: 700;
+}
