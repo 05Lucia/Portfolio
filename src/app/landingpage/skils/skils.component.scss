@@ -7,7 +7,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $bg1;
-    @include dFlex ($jc: center, $ai: center, $g: 2rem);
+    @include dFlex ($jc: center, $ai: center, $g: 0rem);
     flex-direction: column;
 
     text-align: center;
@@ -18,19 +18,23 @@ section {
 .overlay {
     height: 100%;
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
     background-color: rgba(52, 60, 69, 0.9);
-    @include dFlex ($jc: flex-start, $ai: center, $g: 2rem);
-    flex-direction: column;
+    @include dFlex ($jc: center, $ai: center, $g: 0rem);
     top: 0;
     left: 0;
+}
 
-    
+.skill-container {
+    max-width: 1100px;
+    @include dFlex ($jc: flex-start, $ai: center, $g: 2rem);
+    flex-direction: column;
 }
 
 .skill-list {
     @include dFlex ($jc: center, $ai: center, $g: 1.5rem);
     flex-wrap: wrap;
+    padding-bottom: 1rem;
     >div {
         @include dFlex ($jc: center, $ai: center, $g: 0.5rem);
         flex-direction: column;
@@ -40,9 +44,28 @@ section {
 h1 {
     font-weight: 500;
     font-size: 4rem;
-    padding: 1rem 2rem;
+    padding: 0rem 1rem;
     color: $main-color1;
     text-decoration: underline;
     text-underline-offset: 16px;
     text-decoration-thickness: 3px;
+}
+
+@media (min-width: 750px) {
+    .skill-container {
+        @include dFlex ($jc: flex-start, $ai: center, $g: 3rem);
+    }
+
+    .skill-list {
+        @include dFlex ($jc: center, $ai: center, $g: 3rem);
+        font-size: 1.5rem;
+    }
+
+    img {
+        height: 80px;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }

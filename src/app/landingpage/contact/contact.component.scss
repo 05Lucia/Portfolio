@@ -117,3 +117,20 @@ h1 {
     color: rgb(255, 74, 61);
     font-family:'CutiveMono', Arial, Helvetica, sans-serif;
 }
+
+@media (min-width: 750px) {
+    .contact-contaniner {
+        max-width: 1300px;
+        flex-direction: row;
+        @include dFlex ($jc: center, $ai: flex-start, $g: 8rem);
+
+        >.contact-info {
+            padding-top: 3rem;
+        }
+    }
+
+    .form-container {
+        width: 25rem;
+        @include dFlex ($jc: center, $ai: center, $g: 0rem);
+    }
+}

@@ -1,6 +1,6 @@
 @import './../../../styles.scss';
 
-.intro-container {
+section {
     @include dFlex ($jc: flex-start, $ai: center, $g: 4rem);
     height: 100%;
     max-height: 100%;
@@ -14,6 +14,7 @@
 .info-box {
     height: 520px;
     width: 310px;
+    min-width: 310px;
     border: 3px solid white;
     border-radius: 30% 0%;
     box-shadow: $main-color1 -4px -4px 2px;
@@ -40,6 +41,7 @@
 .info-box-bottom {
     @include dFlex ($jc: center, $ai: flex-start, $g: 1rem);
     flex-direction: column;
+    
     >div {
         @include dFlex ($jc: center, $ai: center, $g: 10px);
         >img {
@@ -97,4 +99,39 @@ h2 {
     width: 310px;
     @include dFlex ($jc: center, $ai: flex-start, $g: 10px);
     flex-direction: column;
+}
+
+@media (min-width: 750px) {
+
+    .intro-container {
+        flex-direction: row-reverse;
+        @include dFlex ($jc: space-around, $ai: center, $g: 4rem);
+    }
+
+    section {
+        flex-direction: row-reverse;
+        @include dFlex ($jc: space-around, $ai: center, $g: 4rem);
+        max-width: 1700px;
+    }
+
+    .interduction {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+   h2 {
+    font-size: 1.75rem;
+   }
+
+   p{
+    font-size: 1.25rem;
+   }
+
+   .info-box {
+    width: 320px;
+    height: 550px;
+   }
 }
