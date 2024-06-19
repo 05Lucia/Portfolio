@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -21,7 +22,8 @@ export class ContactComponent {
   }
 
   mailTest = false;
-  
+  messageSend = false;
+
   post = {
     endPoint: 'https://alice-buchholz.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -38,16 +40,25 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            console.log(response);
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.showSuccess(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
+      this.showSuccess();
     }
+  }
+
+  showSuccess() {
+    this.messageSend = true;
+    setTimeout(() => {
+      this.messageSend = false;
+    }, 3000);
   }
 }

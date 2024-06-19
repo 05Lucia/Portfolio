@@ -2,8 +2,7 @@
     <h1>Projekte</h1>
     <div class="project-container">
         @for (project of projectData.projectlist; track project.name; let index = $index, even = $even) {
-        <div class="project-component" 
-        [ngClass]="{'project-class-left': even, 'project-class-right': !even}" [attr.data-aos]="even ? 'fade-right' : 'fade-left'">  <!-- -->
+        <div class="project-component" [ngClass]="{'project-class-left': even, 'project-class-right': !even}" [attr.data-aos]="even ? 'fade-right' : 'fade-left'"> 
             <div class="project-img-screen">
                 <div class="project-img">
                     <img src="{{project.img}}" alt="">

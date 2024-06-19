@@ -21,7 +21,10 @@
 
 .contact-info {
     text-align: center;
-    @include dFlex ($jc: center, $ai: center, $g: 0rem);
+    @include dFlex ($jc: center, $ai: center, $g: 5rem);
+    flex-direction: column;
+    >div {
+
     >h2 {
         font-family:'CutiveMono', Arial, Helvetica, sans-serif;
         font-size: 1.25rem;
@@ -30,8 +33,28 @@
             font-family:'CutiveMono', Arial, Helvetica, sans-serif;
             color: $main-color1;
         }
-    }
+    } 
 }
+}
+
+.sendMessage {
+    opacity: 0;
+    color: $main-color1;
+    background-color: $bg2;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: $main-color2 solid 2px;
+    font-size: 2rem;
+    animation: fadeIn 3s ease-in-out;
+    filter: drop-shadow(0px 0px 15px $main-color2);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    40% { opacity: 1; }
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+  }
 
 form {
     width: 100%;
@@ -81,6 +104,11 @@ form {
         color: $main-color1;
         
     }
+
+    >span {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .submit {
@@ -113,9 +141,26 @@ h1 {
     text-decoration-thickness: 3px;
 }
 
+a {
+    color: $main-color1;
+    text-decoration: underline;
+}
+
 .warning {
-    color: rgb(255, 74, 61);
+    color: #ffd900;
     font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+}
+
+.Privacy-container {
+    width:  100%;
+    @include dFlex ($jc: flex-start, $ai: center, $g: 16px);
+    padding-top: 16px;
+
+    >input[type="checkbox"] {
+        accent-color: $main-color1;
+        height: 1rem;
+        width: 1rem;
+    }
 }
 
 @media (min-width: 750px) {
@@ -132,5 +177,9 @@ h1 {
     .form-container {
         width: 25rem;
         @include dFlex ($jc: center, $ai: center, $g: 0rem);
+    }
+
+    .contact-info {
+        @include dFlex ($jc: center, $ai: center, $g: 10rem);
     }
 }
