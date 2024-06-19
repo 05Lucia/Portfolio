@@ -100,3 +100,18 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
 }
+
+@media (min-width: 750px) {
+
+    .project-text {
+        width: 50%;
+    }
+
+    .project-class-left {
+        flex-direction: row !important;
+    }
+
+    .project-class-right {
+        flex-direction: row-reverse !important;
+    }
+}

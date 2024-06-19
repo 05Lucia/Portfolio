@@ -1,11 +1,10 @@
-import { Injectable } from '@angular/core';
+import { HostListener, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectdataService {
 
-  constructor() { }
 
   projectlist = [
     {
