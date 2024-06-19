@@ -49,9 +49,7 @@ export class ContactComponent {
           complete: () => this.showSuccess(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
-      this.showSuccess();
     }
   }
 

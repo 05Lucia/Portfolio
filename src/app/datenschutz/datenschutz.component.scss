@@ -1,0 +1,24 @@
+@import './../../styles.scss';
+
+section {
+    padding: 5rem 2rem;
+    @include dFlex ($jc: flex-start, $ai: flex-start, $g: 1rem);
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: $main-color1;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-thickness: 3px;
+}
+
+a {
+    color: $main-color1;
+}
+
+h2 {
+    color: $main-color2;
+}

@@ -21,7 +21,7 @@
 
 .contact-info {
     text-align: center;
-    @include dFlex ($jc: center, $ai: center, $g: 5rem);
+    @include dFlex ($jc: center, $ai: center, $g: 2rem);
     flex-direction: column;
     >div {
 
