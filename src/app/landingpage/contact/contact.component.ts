@@ -20,7 +20,7 @@ export class ContactComponent {
     message: '',
   }
 
-  mailTest = true;
+  mailTest = false;
   
   post = {
     endPoint: 'https://alice-buchholz.de/sendMail.php',
