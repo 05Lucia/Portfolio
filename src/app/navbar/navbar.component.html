@@ -1,34 +1,35 @@
 <nav>
-    <a href="#start">Alice Buchholz</a> 
+    <div class="nav-container">
+        <a href="#start">Alice Buchholz</a>
 
-    <div class="desktop750" *ngIf="isDesktopSize">
-        <div class="menu-links-desktop">
-           <a href="#about-me">Über mich</a>
-           <a href="#skills">Fähigkeiten</a>
-           <a href="#project">Projekte</a>
+        <div class="desktop750" *ngIf="isDesktopSize">
+            <div class="menu-links-desktop">
+                <a href="#about-me">Über mich</a>
+                <a href="#skills">Fähigkeiten</a>
+                <a href="#project">Projekte</a>
+            </div>
+
+            <div class="language">
+                <a href="DE">DE</a>
+                <div class="seperator"></div>
+                <a href="EN">EN</a>
+            </div>
         </div>
 
-        <div class="language">
-            <a href="DE">DE</a>
-            <div class="seperator"></div>
-            <a href="EN">EN</a>
+        <div id="menu" *ngIf="!isMenuActive && !isDesktopSize" (click)="toggleMenu()">
+            <img src="./../../assets/img/menu.svg" alt="menu">
         </div>
-    </div>
 
-    <div id="menu" *ngIf="!isMenuActive && !isDesktopSize" (click)="toggleMenu()">
-        <img src="./../../assets/img/menu.svg" alt="menu">
-    </div>
-
-    <div class="closemenu" *ngIf="isMenuActive && !isDesktopSize" (click)="toggleMenu()">
-        <span class="close">X</span>
+        <div class="closemenu" *ngIf="isMenuActive && !isDesktopSize" (click)="toggleMenu()">
+            <span class="close">X</span>
+        </div>
     </div>
 </nav>
 
-<div class="mobile-menu" [class.active]="isMenuActive"> 
+<div class="mobile-menu" [class.active]="isMenuActive">
     <a class="mobile-link" (click)="toggleMenu('about-me')">Über mich</a>
     <a class="mobile-link" (click)="toggleMenu('skills')">Fähigkeiten</a>
     <a class="mobile-link" (click)="toggleMenu('project')">Projekte</a>
-    <a class="mobile-link" >DE</a>
-    <a class="mobile-link" >EN</a>
+    <a class="mobile-link">DE</a>
+    <a class="mobile-link">EN</a>
 </div>
-

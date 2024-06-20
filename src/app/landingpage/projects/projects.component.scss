@@ -10,6 +10,7 @@
 }
 
 .project-container {
+    max-width: 1300px;
     @include dFlex ($jc: center, $ai: center, $g: 6rem);
     flex-direction: column;
 }
@@ -113,5 +114,15 @@ h3 {
 
     .project-class-right {
         flex-direction: row-reverse !important;
+    }
+
+    .project-component {
+        @include dFlex ($jc: center, $ai: center, $g: 4rem);
+    }
+}
+
+@media (min-width: 1300px) {
+    .project-component {
+        @include dFlex ($jc: center, $ai: center, $g: 19rem);
     }
 }

@@ -2,6 +2,12 @@
 
 section {
     width: 100%;
+    @include dFlex ($jc: center, $ai: center, $g: 0rem);
+}
+
+footer {
+    width: 100%;
+    max-width: 1300px;
     @include dFlex ($jc: space-between, $ai: center, $g: 1rem);
     padding: 1rem;
 }
