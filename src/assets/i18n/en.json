@@ -38,5 +38,26 @@
     },
     "PROJECT3": {
         "INFO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "CONTACT":{
+        "H1": "Contact",
+        "TEXT1":"Do you need a ",
+        "TEXT2":"Let's talk!",
+        "MESSAGE-SEND":"Message sent!!",
+        "YOUR-NAME": "Your Name..",
+        "NAME-WARNING": "Your name is required (minimum length: 2)",
+        "YOUR-MAIL":"Your E-mail..",
+        "MEIL-WARNING": "Your email is required",
+        "MESSAGE":"Message",
+        "YOUR-MESSAGE":"Your message..",
+        "MESSAGE-WARNING":"Your message is required (minimum length: 5)",
+        "PRIVACY-TEXT":"I accept the",
+        "PRIVACY":"privacy policy",
+        "PRIVACY-WARNIG":"Please accept the privacy policy",
+        "SEND":"Send Message"
+    },
+    "FOOTER": {
+        "LINK":"Picture from",
+        "IMPRINT":"Imprint"
     }
 }

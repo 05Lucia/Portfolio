@@ -38,6 +38,27 @@
     },
     "PROJECT3": {
         "INFO": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+    },
+    "CONTACT":{
+        "H1": "Kontakt",
+        "TEXT1":"Brauchen Sie eine ",
+        "TEXT2":"Kontaktieren Sie mich!",
+        "MESSAGE-SEND":"Nachricht versand!!",
+        "YOUR-NAME": "Ihr Name..",
+        "NAME-WARNING": "Ihr Name ist erforderlich (Mindestlänge: 2)",
+        "YOUR-MAIL":"Ihre E-mail..",
+        "MEIL-WARNING": "Ihre E-mail ist erforderlich",
+        "MESSAGE":"Nachricht",
+        "YOUR-MESSAGE":"Ihre Nachricht..",
+        "MESSAGE-WARNING":"Ihre Nachricht ist erforderlich (Mindestlänge: 5)",
+        "PRIVACY-TEXT":"Ich akzeptiere die",
+        "PRIVACY":"Datenschutzrichtlinien",
+        "PRIVACY-WARNIG":"Bitte akzeptieren sie die Datenschutzrichtlinien",
+        "SEND":"Nachricht Senden"
+    },
+    "FOOTER": {
+        "LINK":"Bild von",
+        "IMPRINT":"Impressum"
     }
 
 
