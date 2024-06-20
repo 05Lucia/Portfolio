@@ -1,20 +1,37 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 
   isMenuActive = false;
   isDesktopSize = true;
+  currentLanguage: string = 'de';
+  translate!: TranslateService;
+  activeLink: string = '';
+
+  constructor(translate: TranslateService) {
+    this.translate = translate;
+  }
+
+  changeLanguage(lang: string) {
+    this.currentLanguage = lang;
+    this.translate.use(lang);
+  }
+
+  setActiveLink(link: string): void {
+    this.activeLink = link;
+  }
 
   ngOnInit() {
-    this.checkWindowSize(); 
+    this.checkWindowSize();
   }
 
   toggleMenu(anchorId?: string) {

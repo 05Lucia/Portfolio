@@ -29,6 +29,11 @@ nav {
     }
 }
 
+.active {
+    color: $main-color1 !important;
+    opacity: 1 !important;
+}
+
 .no-scroll {
     overflow: hidden;
 }

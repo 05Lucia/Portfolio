@@ -4,15 +4,15 @@
 
         <div class="desktop750" *ngIf="isDesktopSize">
             <div class="menu-links-desktop">
-                <a href="#about-me">Über mich</a>
-                <a href="#skills">Fähigkeiten</a>
-                <a href="#project">Projekte</a>
+                <a href="#about-me">{{'NAVBAR.ABOUT-ME' | translate}}</a>
+                <a href="#skills">{{'NAVBAR.SKILLS' | translate}}</a>
+                <a href="#project">{{'NAVBAR.PROJECT' | translate}}</a>
             </div>
 
             <div class="language">
-                <a href="DE">DE</a>
+                <a [ngClass]="{'active': currentLanguage === 'de'}" (click)="changeLanguage('de')">DE</a>
                 <div class="seperator"></div>
-                <a href="EN">EN</a>
+                <a [ngClass]="{'active': currentLanguage === 'en'}" (click)="changeLanguage('en')">EN</a>
             </div>
         </div>
 
@@ -27,9 +27,9 @@
 </nav>
 
 <div class="mobile-menu" [class.active]="isMenuActive">
-    <a class="mobile-link" (click)="toggleMenu('about-me')">Über mich</a>
-    <a class="mobile-link" (click)="toggleMenu('skills')">Fähigkeiten</a>
-    <a class="mobile-link" (click)="toggleMenu('project')">Projekte</a>
-    <a class="mobile-link">DE</a>
-    <a class="mobile-link">EN</a>
+    <a class="mobile-link" (click)="toggleMenu('about-me')">{{'NAVBAR.ABOUT-ME' | translate}}</a>
+    <a class="mobile-link" (click)="toggleMenu('skills')">{{'NAVBAR.SKILLS' | translate}}</a>
+    <a class="mobile-link" (click)="toggleMenu('project')">{{'NAVBAR.PROJECT' | translate}}</a>
+    <a class="mobile-link" [ngClass]="{'active': currentLanguage === 'de'}" (click)="changeLanguage('de')">DE</a>
+    <a class="mobile-link" [ngClass]="{'active': currentLanguage === 'en'}" (click)="changeLanguage('en')">EN</a>
 </div>

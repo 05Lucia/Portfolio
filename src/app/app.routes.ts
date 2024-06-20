@@ -1,7 +1,8 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     {path:'', component: LandingpageComponent},
@@ -9,3 +10,11 @@ export const routes: Routes = [
     {path:'datenschutz', component:DatenschutzComponent},
 
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+  })
+  export class AppRoutingModule { 
+    
+  }

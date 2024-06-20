@@ -1,0 +1,42 @@
+{
+    "NAVBAR": {
+        "ABOUT-ME": "About me",
+        "SKILLS": "Skills",
+        "PROJECT": "Project"
+    },
+    "INTRO": {
+        "TEXT": "Frontend developer",
+        "COUNTRY": "Germany",
+        "HELLO": "Hello",
+        "I-AM":"I am ",
+        "BUTTON": "Let's talk!"
+    },
+    "ABOUT-ME": {
+        "H1":"About me",
+        "TEXT1": "I am a frontend developer with experience in ",
+        "TEXT1.2":"and",
+        "TEXT1.3":"I love developing modern web applications that are user-friendly and powerful.",
+        "TEXT2": "I have worked on several projects, both individually and as part of a team. These experiences have allowed me to refine my skills and develop creative solutions.",
+        "TEXT3": "The decision to focus on application development was deliberate and driven by my passion for coding and ",
+        "TEXT3.2":"problem-solving",
+        "TEXT3.3": " It fulfills me to overcome complex challenges and create great user experiences. Some of these ",
+        "TEXT3.4":"projects",
+        "TEXT3.5": " are presented here in my portfolio."
+    },
+    "SKILLS": {
+        "H1": "Skills",
+        "TEXT": "I am striving to never stop learning and improving."
+    },
+    "PROJECTS": {
+        "H1":"Projects"
+    },
+    "PROJECT1": {
+        "INFO": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    },
+    "PROJECT2": {
+        "INFO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    "PROJECT3": {
+        "INFO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    }
+}

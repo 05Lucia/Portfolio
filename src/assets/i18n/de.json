@@ -3,5 +3,42 @@
         "ABOUT-ME": "Über mich",
         "SKILLS": "Fähigkeiten",
         "PROJECT": "Projekte"
+    },
+    "INTRO": {
+        "TEXT": "Frontend-Entwicklerin",
+        "COUNTRY": "Deutschland",
+        "HELLO": "Hallo",
+        "I-AM":"Ich bin ",
+        "BUTTON": "Schreiben sie mir!"
+    },
+    "ABOUT-ME": {
+        "H1":"Über mich",
+        "TEXT1": "Ich bin Frontend-Entwicklerin mit Erfahrung in ",
+        "TEXT1.2":"und",
+        "TEXT1.3":"Ich liebe es,moderne Webanwendungen zu entwickeln, die benutzerfreundlich und leistungsstark sind.",
+        "TEXT2": "Ich habe an einigen Projekten gearbeitet, sowohl individuell als auch im Team. Diese Erfahrungen haben mir ermöglicht, meine Fähigkeiten zu verfeinern und kreative Lösungen zu entwickeln.",
+        "TEXT3": "Die Entscheidung, mich auf die Anwendungsentwicklung zu konzentrieren, war bewusst und aus meiner Freude am Coden und dem ",
+        "TEXT3.2":"Lösen von Problemen",
+        "TEXT3.3": " getroffen. Es erfüllt mich, komplexe Herausforderungen zu meistern und großartige Nutzererlebnisse zu schaffen. Einige dieser ",
+        "TEXT3.4":"Projekte",
+        "TEXT3.5": " präsentiere ich hier in meinem Portfolio."
+    },
+    "SKILLS": {
+        "H1": "Fähigkeiten",
+        "TEXT": "Ich strebe kontinuierlich danach, mich weiterzuentwickeln."
+    },
+    "PROJECTS": {
+        "H1":"Projekte"
+    },
+    "PROJECT1": {
+        "INFO": "Basierend auf der PokéAPI ist dies eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+    },
+    "PROJECT2": {
+        "INFO": "Springe, renne und wirf in einem Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
+    },
+    "PROJECT3": {
+        "INFO": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
     }
+
+
 }
