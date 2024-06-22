@@ -5,8 +5,7 @@
     max-width: 100%;
     @include dFlex ($jc: center, $ai: center, $g: 3rem);
     flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding: 3rem 1rem; 
 }
 
 .form-container {
@@ -68,7 +67,7 @@ form {
         background-color: $bg2;
         border: 1px solid $main-color2;
         border-radius: 0.5rem;
-        padding-left: 0.5rem;
+        padding: 8px;
         color: white;
 
         &::placeholder {
@@ -77,6 +76,7 @@ form {
 
         &:hover {
             border: 2px solid $main-color2;
+            padding: 7px;
         }
     }
 
@@ -85,7 +85,7 @@ form {
         background-color: $bg2;
         border: 1px solid $main-color2;
         border-radius: 0.5rem;
-        padding: 0.5rem;
+        padding: 8px;
         color: white;
 
         &::placeholder {
@@ -94,6 +94,7 @@ form {
 
         &:hover {
             border: 2px solid $main-color2;
+            padding: 7px;
         }
     }
 
@@ -151,7 +152,7 @@ a {
     font-family:'CutiveMono', Arial, Helvetica, sans-serif;
 }
 
-.Privacy-container {
+.privacy-container {
     width:  100%;
     @include dFlex ($jc: flex-start, $ai: center, $g: 16px);
     padding-top: 16px;
@@ -163,14 +164,29 @@ a {
     }
 }
 
+.up {
+    width: 100%;
+    max-width: 1300px;
+    @include dFlex ($jc: center, $ai: center, $g: 0rem);
+
+    >a{
+        background-color: $bg2;
+        padding: 5px;
+        border-radius: 100%;
+        @include dFlex ($jc: center, $ai: center, $g: 0rem);
+    }
+}
+
 @media (min-width: 750px) {
     .contact-contaniner {
+        width: 100%;
         max-width: 1300px;
         flex-direction: row;
-        @include dFlex ($jc: center, $ai: flex-start, $g: 8rem);
+        @include dFlex ($jc: space-between, $ai: flex-start, $g: 8rem);
 
         >.contact-info {
             padding-top: 3rem;
+            @include dFlex ($jc: center, $ai: center, $g: 10rem);
         }
     }
 
@@ -179,7 +195,8 @@ a {
         @include dFlex ($jc: center, $ai: center, $g: 0rem);
     }
 
-    .contact-info {
-        @include dFlex ($jc: center, $ai: center, $g: 10rem);
+    .up {
+        @include dFlex ($jc: flex-end, $ai: center, $g: 0rem);
+        padding-right: 1rem;
     }
 }

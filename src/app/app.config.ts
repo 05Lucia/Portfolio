@@ -1,4 +1,4 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, ErrorHandler, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
@@ -6,6 +6,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 import { HttpLoaderFactory } from '../main';
+import { GlobalErrorHandler } from './globla-error-handler';
 
 
 export const appConfig: ApplicationConfig = {
@@ -21,6 +22,10 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         }
       })
-    )
+    ),
+    {
+      provide: ErrorHandler,
+      useClass: GlobalErrorHandler,
+    }
   ]
 };

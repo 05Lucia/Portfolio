@@ -1,9 +1,15 @@
 @import './../../styles.scss';
 
 section {
+    @include dFlex ($jc: center, $ai: flex-start, $g: 0rem);
     padding: 5rem 2rem;
+}
+
+div {
+   
     @include dFlex ($jc: flex-start, $ai: flex-start, $g: 1rem);
     flex-direction: column;
+    max-width: 1300px; 
 }
 
 h1 {

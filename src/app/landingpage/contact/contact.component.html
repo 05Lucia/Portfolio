@@ -16,7 +16,7 @@
         <div class="form-container">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <label for="name">Name</label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname"
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
                     placeholder="{{'CONTACT.YOUR-NAME' | translate}}" required minlength="2">
                 @if (!name.valid && name.touched) {
                 <span class="warning">{{'CONTACT.NAME-WARNING' | translate}}</span>
@@ -24,28 +24,32 @@
 
                 <label for="email">E-mail</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="{{'CONTACT.YOUR-MAIL' | translate}}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    placeholder="{{'CONTACT.YOUR-MAIL' | translate}}" required
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched) {
                 <span class="warning">{{'CONTACT.MEIL-WARNING' | translate}}</span>
                 }
 
-                <label for="subject">{{'CONTACT.MESSAGE' | translate}}</label><!--Subject-->
-                <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" id="subject" name="subject"
+                <label for="message">{{'CONTACT.MESSAGE' | translate}}</label><!--Subject-->
+                <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" id="message" name="message"
                     placeholder="{{'CONTACT.YOUR-MESSAGE' | translate}}" style="height:200px" required></textarea>
                 @if (!message.valid && message.touched) {
                 <span class="warning">{{'CONTACT.MESSAGE-WARNING' | translate}}</span>
                 }
-                <div class="Privacy-container">
-                    <input #checkbox="ngModel" ngModel type="checkbox" name="Privacy Policies" id="Privacy Policies"
+                <div class="privacy-container">
+                    <input #checkbox="ngModel" ngModel type="checkbox" name="privacy-policies" id="privacy-policies"
                         required>
-                    <label for="Privacy Policies">{{'CONTACT.PRIVACY-TEXT' | translate}} <a
+                    <label for="privacy-policies">{{'CONTACT.PRIVACY-TEXT' | translate}} <a
                             routerLink="/datenschutz">{{'CONTACT.PRIVACY' | translate}}</a></label>
                 </div>
-                <span class="warning" *ngIf="checkbox.invalid && email.valid && name.valid && message.valid">{{'CONTACT.PRIVACY-WARNIG' | translate}}</span>
+                <span class="warning"
+                    *ngIf="checkbox.invalid && email.valid && name.valid && message.valid">{{'CONTACT.PRIVACY-WARNIG' |
+                    translate}}</span>
 
-                <button type="submit" class="submit" #submit="ngModel" ngModel> {{'CONTACT.SEND' | translate}} </button>
-
+                <button type="submit" value="submit" class="submit" #submit="ngModel" ngModel> {{'CONTACT.SEND' |
+                    translate}} </button>
             </form>
         </div>
     </div>
+    <div class="up"><a href="#start"><img src="assets/img/arrow_upward.svg" alt="arrow up"></a></div>
 </div>

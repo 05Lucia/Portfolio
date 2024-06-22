@@ -34,10 +34,6 @@ nav {
     opacity: 1 !important;
 }
 
-.no-scroll {
-    overflow: hidden;
-}
-
 .mobile-menu.active {
     position: fixed;
     height: 100vh;
@@ -111,4 +107,8 @@ nav {
         width: 2px;
         background-color: $bg1-light;
     }
+}
+
+a {
+    cursor: pointer;
 }

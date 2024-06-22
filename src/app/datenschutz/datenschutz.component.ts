@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './datenschutz.component.scss'
 })
 export class DatenschutzComponent {
-
+  ngAfterViewInit() {
+    window.scroll(0,0)
+   }
 }
