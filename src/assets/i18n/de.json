@@ -8,19 +8,19 @@
         "TEXT": "Frontend-Entwicklerin",
         "COUNTRY": "Deutschland",
         "HELLO": "Hallo",
-        "I-AM":"Ich bin ",
+        "I-AM": "Ich bin ",
         "BUTTON": "Schreiben sie mir!"
     },
     "ABOUT-ME": {
-        "H1":"Über mich",
+        "H1": "Über mich",
         "TEXT1": "Ich bin Frontend-Entwicklerin mit Erfahrung in ",
-        "TEXT1.2":"und",
-        "TEXT1.3":"Ich liebe es,moderne Webanwendungen zu entwickeln, die benutzerfreundlich und leistungsstark sind.",
+        "TEXT1.2": "und",
+        "TEXT1.3": "Ich liebe es,moderne Webanwendungen zu entwickeln, die benutzerfreundlich und leistungsstark sind.",
         "TEXT2": "Ich habe an einigen Projekten gearbeitet, sowohl individuell als auch im Team. Diese Erfahrungen haben mir ermöglicht, meine Fähigkeiten zu verfeinern und kreative Lösungen zu entwickeln.",
         "TEXT3": "Die Entscheidung, mich auf die Anwendungsentwicklung zu konzentrieren, war bewusst und aus meiner Freude am Coden und dem ",
-        "TEXT3.2":"Lösen von Problemen",
+        "TEXT3.2": "Lösen von Problemen",
         "TEXT3.3": " getroffen. Es erfüllt mich, komplexe Herausforderungen zu meistern und großartige Nutzererlebnisse zu schaffen. Einige dieser ",
-        "TEXT3.4":"Projekte",
+        "TEXT3.4": "Projekte",
         "TEXT3.5": " präsentiere ich hier in meinem Portfolio."
     },
     "SKILLS": {
@@ -28,7 +28,7 @@
         "TEXT": "Ich strebe kontinuierlich danach, mich weiterzuentwickeln."
     },
     "PROJECTS": {
-        "H1":"Projekte"
+        "H1": "Projekte"
     },
     "PROJECT1": {
         "INFO": "Basierend auf der PokéAPI ist dies eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
@@ -39,27 +39,76 @@
     "PROJECT3": {
         "INFO": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
     },
-    "CONTACT":{
+    "CONTACT": {
         "H1": "Kontakt",
-        "TEXT1":"Brauchen Sie eine ",
-        "TEXT2":"Kontaktieren Sie mich!",
-        "MESSAGE-SEND":"Nachricht versand!!",
+        "TEXT1": "Brauchen Sie eine ",
+        "TEXT2": "Kontaktieren Sie mich!",
+        "MESSAGE-SEND": "Nachricht versand!!",
         "YOUR-NAME": "Ihr Name..",
         "NAME-WARNING": "Ihr Name ist erforderlich (Mindestlänge: 2)",
-        "YOUR-MAIL":"Ihre E-mail..",
+        "YOUR-MAIL": "Ihre E-mail..",
         "MEIL-WARNING": "Ihre E-mail ist erforderlich",
-        "MESSAGE":"Nachricht",
-        "YOUR-MESSAGE":"Ihre Nachricht..",
-        "MESSAGE-WARNING":"Ihre Nachricht ist erforderlich (Mindestlänge: 5)",
-        "PRIVACY-TEXT":"Ich akzeptiere die",
-        "PRIVACY":"Datenschutzrichtlinien",
-        "PRIVACY-WARNIG":"Bitte akzeptieren sie die Datenschutzrichtlinien",
-        "SEND":"Nachricht Senden"
+        "MESSAGE": "Nachricht",
+        "YOUR-MESSAGE": "Ihre Nachricht..",
+        "MESSAGE-WARNING": "Ihre Nachricht ist erforderlich (Mindestlänge: 5)",
+        "PRIVACY-TEXT": "Ich akzeptiere die",
+        "PRIVACY": "Datenschutzrichtlinien",
+        "PRIVACY-WARNIG": "Bitte akzeptieren sie die Datenschutzrichtlinien",
+        "SEND": "Nachricht Senden"
     },
     "FOOTER": {
-        "LINK":"Bild von",
-        "IMPRINT":"Impressum"
+        "LINK": "Bild von",
+        "IMPRINT": "Impressum"
+    },
+    "IMPRINT": {
+        "H1": "Impressum",
+        "TEXT1": "Angaben gemäß § 5 TMG",
+        "TEXT2": "Vertreten durch:",
+        "CONTACT": "Kontakt:",
+        "PHONE": "Telefon:",
+        "H2": "Haftungsausschluss:",
+        "LINKS":"Haftung für Links",
+        "TEXT3": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+        "PRIVACY": "Datenschutz",
+        "TEXT4":"Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.",
+        "FOOT-NOTES1":"Website Impressum erstellt durch",
+        "FOOT-NOTES2":"von der",
+        "FOOT-NOTES3":"Hintergrund Image von",
+        "FOOT-NOTES4": "Icons von"
+    },
+    "PRIVACY-POLICY": {
+        "H1":"Datenschutzerklärung",
+        "DATE":"Stand:",
+        "H2.1":"Verantwortlicher",
+        "H2.2":"Übersicht der Verarbeitungen",
+        "TEXT1":"Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen. ",
+        "H3.1": "Arten der verarbeiteten Daten",
+        "LI1.1":"Bestandsdaten.",
+        "LI1.2":"Kontaktdaten.",
+        "LI1.3":"Inhaltsdaten.",
+        "LI1.4":"Nutzungsdaten.",
+        "LI1.5":"Meta-, Kommunikations- und Verfahrensdaten.",
+        "LI1.6":"Protokolldaten.",
+        "H3.2": "Kategorien betroffener Personen",
+        "LI2.1":"Kommunikationspartner.",
+        "LI2.2":"Nutzer.",
+        "H3.3": "Zwecke der Verarbeitung",
+        "LI3.1":"Kommunikation.",
+        "LI3.2":"Sicherheitsmaßnahmen.",
+        "LI3.3":"Organisations- und Verwaltungsverfahren.",
+        "LI3.4":"Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.",
+        "LI3.5":"Informationstechnische Infrastruktur.",
+        "LI3.6":"Öffentlichkeitsarbeit.",
+        "H2.3":"Maßgebliche Rechtsgrundlagen",
+        "STRONG1":"Maßgebliche Rechtsgrundlagen nach der DSGVO:",
+        "TEXT2": "Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.",
+        "STRONG2":"Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)",
+        "TEXT3": "- Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.",
+        "STRONG3":"Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)",
+        "TEXT4": "Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen.",
+        "STRONG4":"Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)",
+        "TEXT5": "die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen.",
+        "STRONG5":"Nationale Datenschutzregelungen in Deutschland:",
+        "TEXT6": "Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen."
     }
-
-
 }

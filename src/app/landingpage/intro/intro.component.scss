@@ -6,72 +6,28 @@ section {
     max-height: 100%;
     width: 100%;
     padding: 6rem 2rem;
-    padding-top: 8rem;
+    padding-top: 10rem;
     background-color: $bg1;
     color: white;
     flex-direction: column;
-}
-
-.info-box {
-    height: 520px;
-    width: 310px;
-    min-width: 310px;
-    border: 3px solid white;
-    border-radius: 30% 0%;
-    box-shadow: $main-color1 -4px -4px 2px;
-    @include dFlex ($jc: center, $ai: center, $g: 1rem);
-    flex-direction: column;
-    padding-top: 1.5rem;
 
     >img {
-        height: 11rem;
-        width: 7.5rem;
-        border: 3px solid $main-color1;
-        border-radius: 100%;
-        object-fit:fill;
-        object-position: center;
-        
-    }
-
-    >div {
-        padding-bottom: 2rem;
-        background-color: transparent;
+        height: 500px;
+        border-radius: 16px;
+        border: solid 2px $main-color1;
     }
 }
 
-.info-box-bottom {
-    @include dFlex ($jc: center, $ai: flex-start, $g: 1rem);
-    flex-direction: column;
+.location {
+    @include dFlex ($jc: center, $ai: center, $g: 5px);
     
-    >div {
-        @include dFlex ($jc: center, $ai: center, $g: 10px);
-        >img {
-            height: 16px;
-        }
-        >a {
-            color: white;
-            text-decoration: none;
-            &:hover {
-                color: $main-color2;
-            }
-        }
+    padding-bottom: 1rem;
+    > img {
+        height: 1rem;
     }
-}
-
-.name {
-    @include dFlex ($jc: center, $ai: center, $g: 0);
-    flex-direction: column;
-}
-
-.languages {
-    @include dFlex ($jc: flex-start, $ai: center, $g: 10px !important);
 
     >p {
-        font-size: 14px;
-        padding: 2px 8px;
-        color: $bg1;
-        background-color: $main-color1;
-        border-radius: 9px;
+        font-size: 1rem;
     }
 }
 
@@ -102,6 +58,20 @@ h2 {
     flex-direction: column;
 }
 
+.links {
+    @include dFlex ($jc: center, $ai: center, $g: 16px);
+    padding-top: 2rem;
+
+    >a {
+        color: $main-color2;
+        text-decoration: none;
+
+        &:hover {
+            color: $main-color1;
+        }
+    }
+}
+
 @media (min-width: 750px) {
 
     .intro-container {
@@ -123,16 +93,25 @@ h2 {
         font-size: 3rem;
     }
 
-   h2 {
-    font-size: 1.75rem;
-   }
+    h2 {
+        font-size: 1.75rem;
+    }
 
-   p{
-    font-size: 1.25rem;
-   }
+    p {
+        font-size: 1.25rem;
+    }
 
-   .info-box {
-    width: 320px;
-    height: 550px;
-   }
+    .info-box {
+        width: 320px;
+        height: 550px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    section {
+        >img {
+            height: 600px;
+        }
+    }
 }

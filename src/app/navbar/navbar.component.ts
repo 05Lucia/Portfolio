@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   currentLanguage: string = 'de';
   translate!: TranslateService;
   activeLink: string = '';
+  
 
   constructor(translate: TranslateService) {
     this.translate = translate;

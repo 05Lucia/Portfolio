@@ -20,12 +20,19 @@ a {
     cursor: pointer;
     color: $main-color2 !important;
     text-decoration: none;
+    &:hover {
+        color: $main-color1 !important;
+    }
 }
 
 .links {
     >a{
         >img{
             height: 30px;
+            &:hover {
+                scale: 1.15;
+            }
         }
+        
     }
 }

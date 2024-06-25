@@ -40,11 +40,9 @@
     &:hover {
         background-color: $main-color2;
         border-color: $main-color2;
-    }
-    >a {
         color: $bg1;
-        text-decoration: none;
     }
+    
 }
 
 
@@ -123,6 +121,6 @@ h3 {
 
 @media (min-width: 1300px) {
     .project-component {
-        @include dFlex ($jc: center, $ai: center, $g: 19rem);
+        @include dFlex ($jc: center, $ai: center, $g: 10rem);
     }
 }

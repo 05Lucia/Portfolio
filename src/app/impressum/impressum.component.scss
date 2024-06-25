@@ -8,7 +8,12 @@ section {
 .impressum {
     max-width: 1300px;
     padding-top: 4rem;
-    height: 93.5vh;
+    height: 87.5vh;
+    @include dFlex ($jc: flex-start, $ai: flex-start, $g: 1rem);
+    flex-direction: column;
+}
+
+.contact-info {
     @include dFlex ($jc: space-between, $ai: flex-start, $g: 1rem);
     flex-direction: column;
 }

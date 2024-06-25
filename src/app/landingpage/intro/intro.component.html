@@ -1,42 +1,29 @@
 <div ngClass="intro-container" id="start">
     <section>
-        <div ngClass="info-box">
-            <img src="./assets/img/Bewerbungs bild.jpg" alt="">
-            <div class="name">
-                <h1>Alice</h1>
-                <p>{{'INTRO.TEXT' | translate}}</p>
-            </div>
 
-            <div ngClass="info-box-bottom">
-                <div>
-                    <img src="./assets/img/location.svg" alt="">
-                    <p>{{'INTRO.COUNTRY' | translate}}</p>
-                </div>
-                <div>
-                    <img src="./assets/img/link.svg" alt="">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/05Lucia">Github</a>
-                </div>
-                <div>
-                    <img src="./assets/img/link.svg" alt="">
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/alice-buchholz-91804a226/">Linkedin</a>
-                </div>
+<img src="./assets/img/Bewerbungs bild.jpg" alt="">
 
-                <div ngClass="languages">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JS</p>
-                    <p>Angular</p>
-                </div>
-            </div>
-        </div>
         <div ngClass="interduction">
+            <div class="location">
+                <img src="./assets/img/location.svg" alt="">
+                <p>{{'INTRO.COUNTRY' | translate}}</p>
+            </div>
             <h1>{{'INTRO.HELLO' | translate}}</h1>
             <h1> Ich bin <div>Alice Buchholz</div>
             </h1>
             <h2>> {{'INTRO.TEXT' | translate}}</h2>
             <br>
             <a class="bto1" href="#contact">{{'INTRO.BUTTON' | translate}} <img src="./assets/img/mail.svg" alt=""></a>
+            <br>
+            <div class="links">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/05Lucia">Github</a>
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/alice-buchholz-91804a226/">Linkedin</a>
+            </div>
+
         </div>
+
+        
+
     </section>
 </div>
