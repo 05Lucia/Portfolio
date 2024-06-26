@@ -6,6 +6,6 @@
                     alt="linkedin"></a>
             <a href="mailto:alice.buchholz@gmail.com"><img src="./assets/img/e-mail.png" alt="Email"></a>
         </div>
-        <a routerLink="/impressum" routerLinkActive="active-link">{{'FOOTER.IMPRINT' | translate}}</a>
+        <a (click)="undisable(false)" routerLink="/impressum" routerLinkActive="active-link">{{'FOOTER.IMPRINT' | translate}}</a>
     </footer>
 </section>

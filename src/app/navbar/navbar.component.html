@@ -1,18 +1,18 @@
 <nav>
     <div class="nav-container">
-        <a href="#start">Alice Buchholz</a>
+        <a (click)="undisable(false)" href="#start">Alice Buchholz</a>
 
         <div class="desktop750" *ngIf="isDesktopSize">
             <div class="menu-links-desktop">
-                <a href="#about-me">{{'NAVBAR.ABOUT-ME' | translate}}</a>
-                <a href="#skills">{{'NAVBAR.SKILLS' | translate}}</a>
-                <a href="#project">{{'NAVBAR.PROJECT' | translate}}</a>
+                <a (click)="undisable(false)" href="#about-me">{{'NAVBAR.ABOUT-ME' | translate}}</a>
+                <a (click)="undisable(false)" href="#skills">{{'NAVBAR.SKILLS' | translate}}</a>
+                <a (click)="undisable(false)" href="#project">{{'NAVBAR.PROJECT' | translate}}</a>
             </div>
 
             <div class="language">
-                <a [ngClass]="{'active': currentLanguage === 'de'}" (click)="changeLanguage('de')">DE</a>
+                <a [ngClass]="{'active': disableServis.currentLanguage === 'de'}" (click)="changeLanguage('de')">DE</a>
                 <div class="seperator"></div>
-                <a [ngClass]="{'active': currentLanguage === 'en'}" (click)="changeLanguage('en')">EN</a>
+                <a [ngClass]="{'active': disableServis.currentLanguage === 'en'}" (click)="changeLanguage('en')" [ngClass]="{'disable': disableServis.disable === true}">EN</a>
             </div>
         </div>
 
@@ -27,9 +27,9 @@
 </nav>
 
 <div class="mobile-menu" [class.active]="isMenuActive">
-    <a class="mobile-link" (click)="toggleMenu('about-me')">{{'NAVBAR.ABOUT-ME' | translate}}</a>
-    <a class="mobile-link" (click)="toggleMenu('skills')">{{'NAVBAR.SKILLS' | translate}}</a>
-    <a class="mobile-link" (click)="toggleMenu('project')">{{'NAVBAR.PROJECT' | translate}}</a>
-    <a class="mobile-link" [ngClass]="{'active': currentLanguage === 'de'}" (click)="changeLanguage('de')">DE</a>
-    <a class="mobile-link" [ngClass]="{'active': currentLanguage === 'en'}" (click)="changeLanguage('en')">EN</a>
+    <a class="mobile-link" (click)="undisable(false)" (click)="toggleMenu('about-me')">{{'NAVBAR.ABOUT-ME' | translate}}</a>
+    <a class="mobile-link" (click)="undisable(false)" (click)="toggleMenu('skills')">{{'NAVBAR.SKILLS' | translate}}</a>
+    <a class="mobile-link" (click)="undisable(false)" (click)="toggleMenu('project')">{{'NAVBAR.PROJECT' | translate}}</a>
+    <a class="mobile-link" [ngClass]="{'active': disableServis.currentLanguage === 'de'}" (click)="changeLanguage('de')">DE</a>
+    <a class="mobile-link"  [ngClass]="{'active': disableServis.currentLanguage === 'en'}" (click)="changeLanguage('en')" [ngClass]="{'disable': disableServis.disable === true}">EN</a>
 </div>

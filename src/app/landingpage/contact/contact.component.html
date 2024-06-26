@@ -25,7 +25,7 @@
                 <label for="email">E-mail</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="{{'CONTACT.YOUR-MAIL' | translate}}" required
-                    pattern="^ [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched) {
                 <span class="warning">{{'CONTACT.MEIL-WARNING' | translate}}</span>
                 }
@@ -39,8 +39,9 @@
                 <div class="privacy-container">
                     <input #checkbox="ngModel" ngModel type="checkbox" name="privacy-policies" id="privacy-policies"
                         required>
-                    <label for="privacy-policies">{{'CONTACT.PRIVACY-TEXT' | translate}} <a
-                            routerLink="/datenschutz">{{'CONTACT.PRIVACY' | translate}}</a></label>
+                    <label for="privacy-policies">{{'CONTACT.PRIVACY-TEXT' | translate}} 
+                        <a (click)="disable(true)" routerLink="/datenschutz">{{'CONTACT.PRIVACY' | translate}}</a>
+                    </label>
                 </div>
                 <span class="warning"
                     *ngIf="checkbox.invalid && email.valid && name.valid && message.valid">{{'CONTACT.PRIVACY-WARNIG' |

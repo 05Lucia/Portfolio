@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { DisableService } from '../disable.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,11 +12,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent implements OnInit {
 
+disableServis = inject(DisableService);
+
   isMenuActive = false;
   isDesktopSize = true;
-  currentLanguage: string = 'de';
   translate!: TranslateService;
-  activeLink: string = '';
   
 
   constructor(translate: TranslateService) {
@@ -23,12 +24,12 @@ export class NavbarComponent implements OnInit {
   }
 
   changeLanguage(lang: string) {
-    this.currentLanguage = lang;
+    this.disableServis.currentLanguage = lang;
     this.translate.use(lang);
   }
 
   setActiveLink(link: string): void {
-    this.activeLink = link;
+    this.disableServis.activeLink = link;
   }
 
   ngOnInit() {
@@ -60,5 +61,9 @@ export class NavbarComponent implements OnInit {
 
   private checkWindowSize() {
     this.isDesktopSize = window.innerWidth >= 750;
+  }
+
+  undisable(change:boolean) {
+    this.disableServis.clickDisable (change);
   }
 }

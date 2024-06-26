@@ -38,6 +38,10 @@ input:-webkit-autofill:active{
     -webkit-text-fill-color: #ffffff;
 }
 
+html {
+    scroll-padding-top: 4.5rem; /* Höhe des Headers */
+}
+
 a {
     color: white;
     text-decoration: none;

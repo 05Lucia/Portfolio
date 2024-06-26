@@ -36,6 +36,8 @@ nav {
 
 .disable {
     color: $bg1-light;
+    pointer-events: none;
+    cursor: default;
 }
 
 .mobile-menu.active {

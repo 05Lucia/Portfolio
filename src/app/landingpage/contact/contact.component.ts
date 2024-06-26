@@ -4,6 +4,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { DisableService } from '../../disable.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,6 +14,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  disableServis = inject(DisableService);
 
   http = inject(HttpClient);
 
@@ -60,4 +63,15 @@ export class ContactComponent {
       this.messageSend = false;
     }, 3000);
   }
+
+  disable(change:boolean) {
+    this.disableServis.clickDisable (change);
+    this.disableServis.currentLanguage === 'de';
+    this.disableServis.changeLanguage ('de');
+  }
+
+  setActiveLink(link: string): void {
+    this.disableServis.activeLink = link;
+  }
+
 }
