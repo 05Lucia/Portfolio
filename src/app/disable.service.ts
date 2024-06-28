@@ -6,7 +6,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class DisableService {
 
-  
   disable = false;
   activeLink: string = '';
   currentLanguage: string = 'de';

@@ -11,18 +11,33 @@ section {
     flex-direction: column;
     padding: 4rem 2rem;
     text-align: center;
+
     >div {
         background-color: $bg1;
         padding: 1.5rem;
         font-size: 1.15rem;
         border-radius: 1.5rem;
-        font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+        font-family: 'CutiveMono', Arial, Helvetica, sans-serif;
     }
 }
 
 span {
-    font-family:'CutiveMono', Arial, Helvetica, sans-serif;
+    font-family: 'CutiveMono', Arial, Helvetica, sans-serif;
     color: $main-color1;
+}
+
+a {
+    font-family: 'CutiveMono', Arial, Helvetica, sans-serif;
+    color: $main-color2;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    &:hover {
+        font-size: 20px;
+        color: $main-color1;
+    }
 }
 
 h1 {
@@ -34,4 +49,3 @@ h1 {
     text-underline-offset: 16px;
     text-decoration-thickness: 3px;
 }
-

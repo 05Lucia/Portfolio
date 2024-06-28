@@ -11,8 +11,6 @@ section {
     flex-direction: column;
 
     text-align: center;
-
-
 }
 
 .overlay {
@@ -35,6 +33,7 @@ section {
     @include dFlex ($jc: center, $ai: center, $g: 1.5rem);
     flex-wrap: wrap;
     padding-bottom: 1rem;
+
     >div {
         @include dFlex ($jc: center, $ai: center, $g: 0.5rem);
         flex-direction: column;
@@ -43,7 +42,7 @@ section {
 
 h1 {
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 3.25rem;
     padding: 0rem 1rem;
     color: $main-color1;
     text-decoration: underline;
@@ -68,4 +67,11 @@ h1 {
     p {
         font-size: 1.5rem;
     }
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 4rem !important;
+    }
+
 }

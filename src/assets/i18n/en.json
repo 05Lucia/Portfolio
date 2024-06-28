@@ -15,13 +15,18 @@
         "H1":"About me",
         "TEXT1": "I am a frontend developer with experience in ",
         "TEXT1.2":"and",
-        "TEXT1.3":"I love developing modern web applications that are user-friendly and powerful.",
-        "TEXT2": "I have worked on several projects, both individually and as part of a team. These experiences have allowed me to refine my skills and develop creative solutions.",
-        "TEXT3": "The decision to focus on application development was deliberate and driven by my passion for coding and ",
-        "TEXT3.2":"problem-solving",
-        "TEXT3.3": " It fulfills me to overcome complex challenges and create great user experiences. Some of these ",
-        "TEXT3.4":"projects",
-        "TEXT3.5": " are presented here in my portfolio."
+        "TEXT1.3":"The decision to focus on application and web development was a conscious one. I enjoy coding and find personal fulfillment in it.",
+
+        "TEXT2": "In my professional life so far, I have learned to tackle problems independently. I think ",
+        "TEXT2.1": "solution-oriented",
+        "TEXT2.2": "look beyond the obvious, and approach my tasks analytically. In group work, I have often taken on the responsibility for",
+        "TEXT2.3": "and have supported my fellow developers in resolving issues.",
+
+        "TEXT3": "I am always excited to master complex challenges and see their results. I have compiled a list of some of my works. Please feel free to take a look ",
+        "TEXT3.2":"here",
+        "TEXT3.3": " at the various ",
+        "TEXT3.4":"projects.",
+        "TEXT3.5": ""
     },
     "SKILLS": {
         "H1": "Skills",

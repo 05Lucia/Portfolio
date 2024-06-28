@@ -9,19 +9,23 @@
         "COUNTRY": "Deutschland",
         "HELLO": "Hallo",
         "I-AM": "Ich bin ",
-        "BUTTON": "Schreiben sie mir!"
+        "BUTTON": "Schreiben Sie mir!"
     },
     "ABOUT-ME": {
         "H1": "Über mich",
         "TEXT1": "Ich bin Frontend-Entwicklerin mit Erfahrung in ",
         "TEXT1.2": "und",
-        "TEXT1.3": "Ich liebe es,moderne Webanwendungen zu entwickeln, die benutzerfreundlich und leistungsstark sind.",
-        "TEXT2": "Ich habe an einigen Projekten gearbeitet, sowohl individuell als auch im Team. Diese Erfahrungen haben mir ermöglicht, meine Fähigkeiten zu verfeinern und kreative Lösungen zu entwickeln.",
-        "TEXT3": "Die Entscheidung, mich auf die Anwendungsentwicklung zu konzentrieren, war bewusst und aus meiner Freude am Coden und dem ",
-        "TEXT3.2": "Lösen von Problemen",
-        "TEXT3.3": " getroffen. Es erfüllt mich, komplexe Herausforderungen zu meistern und großartige Nutzererlebnisse zu schaffen. Einige dieser ",
-        "TEXT3.4": "Projekte",
-        "TEXT3.5": " präsentiere ich hier in meinem Portfolio."
+        "TEXT1.3": "Die Entscheidung, mich auf die Anwendungs- und Webentwicklung zu konzentrieren war bewusst getroffen. Das Coden macht mir Spaß und ich kann mich selbst darin verwirklichen.",
+        "TEXT2": "In meinem bisherigen Berufsleben habe ich gelernt, Probleme alleine anzugehen. Ich denke ",
+        "TEXT2.1": "lösungsorientiert",
+        "TEXT2.2": "schaue über den Tellerrand und gehe analytisch an die mir gestellten Aufgaben heran. Auch in Gruppenarbeiten habe ich oftmals die Verantwortung für das",
+        "TEXT2.3": "übernommen und auch meine Mitentwicklern bei der Fehlerbeseitigung unterstützt.",
+
+        "TEXT3": "Es begeistert mich immer wieder, komplexe Herausforderungen zu meistern und deren Ergebnisse zu sehen. Ich habe eine Liste mit einigen meiner Arbeiten zusammengestellt. Schauen Sie sich gerne",
+        "TEXT3.2":"hier",
+        "TEXT3.3": " die verschiedenen ",
+        "TEXT3.4":"Projekte",
+        "TEXT3.5": "an."
     },
     "SKILLS": {
         "H1": "Fähigkeiten",
